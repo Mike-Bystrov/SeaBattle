@@ -1,0 +1,9 @@
+@startuml
+Alice -> "Bob()" : Hello
+Alif -= "Bob()" : as ok
+Alif <-== "Bob()" : as ok
+"Bob" -> "Это что-то oчень длинное" as Long
+' Эта строчка будет обозначать тоже самое:
+' "Bob()" -> Long as "Это что-то\nочень длинное"
+Long -> "Bob()" : ok
+@enduml
